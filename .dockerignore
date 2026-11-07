@@ -1,0 +1,22 @@
+# Version control metadata
+.git
+.gitignore
+
+# Local Mailpit messages and database files
+mailpit-data/
+
+# Local environment settings and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
