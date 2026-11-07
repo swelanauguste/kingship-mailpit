@@ -11,3 +11,12 @@ services:
     environment:
       - MP_DATABASE=/data/mailpit.db
       - MP_MAX_MESSAGES=5000
+    networks:
+      proxy:
+        aliases:
+          - shared-mailpit
+
+networks:
+  proxy:
+    external: true
+    name: shared-proxy
